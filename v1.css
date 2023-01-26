@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  --main-col-gap: 2rem;
+  --main-section-padding: 2rem 2.5rem;
+}
+
+.main-section {
+  background-color: royalblue;
+  padding: var(--main-section-padding);
+  margin: 1rem 5rem;
+}
+
+.main-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-col {
+  flex: 1;
+  margin: 0 calc(var(--main-col-gap) / 2);
+  background-color: greenyellow;
+}
+.main-col:first-child {
+  margin-left: 0;
+}
+.main-col:last-child {
+  margin-right: 0;
+}
